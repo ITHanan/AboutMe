@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hanan Ahmed - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+</head>
+<body>
+    <section id="Home">
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<div class="navbar">
+
+    <div class="Brand-Name"><h2>Hanan Ahmed</h2></div>
+    
+      <ul class="link">
+
+        <li class="nav-item"><a href="#Home" class="nav-link active" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="#Skills" class="nav-link">Expertise & Skills</a></li>
+        <li class="nav-item"><a href="#Project" class="nav-link">Project</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        <li><button id="toggle-theme" class="theme-toggle">🌙 Dark Mode</button>
+        </li>
+      </ul>
+  </div>
+
+</div>
+
+ 
+  
+ <!--start header-->
+
+<!-- Heder start with three slides-->
+<header class="slider-container01">
+
+    <!-- Fiest slide-->
+    <div class="mySlides">
+      <header class="slider-header" style="background-image: url('./imsge/labtop.jpg');">
+        <div class="overlay">
+          <div class="overlay-text">
+            <h1>Hello! <span>I'm Hanan- Full-Stack Developer</span> from Gothenburg, Sweden 🇸🇪</h1>
+            <p>
+              As a highly skilled and experienced computer programmer, I am passionate about writing code and developing high-quality software that meets the needs of my clients...
+            </p>
+            <a class="btn btn-primary" href="./imsge/HANAN AHMED.pdf 3.pdf" role="button">Download CV</a>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <!-- second slide-->
+    <div class="mySlides">
+      <header class="slider-header" style="background-image: url('./imsge/code-colored.jpg');">
+        <div class="overlay">
+          <div class="overlay-text">
+            <h1>Creative Solutions <span>for Modern Web Apps</span></h1>
+            <p>
+              I focus on creating seamless user experiences and powerful backend systems using the latest technologies including React, .NET, and Node.js.
+            </p>
+            <a class="btn btn-primary" href="#projects" role="button">View Projects</a>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <!-- Therd slide-->
+    <div class="mySlides">
+      <header class="slider-header" style="background-image: url('./imsge/hand-code.webp');">
+        <div class="overlay">
+          <div class="overlay-text">
+            <h1>Let's Work <span>Together</span></h1>
+            <p>
+              Whether you need a website, a web application, or a consultation, I'm here to help. Let's build something amazing together.
+            </p>
+            <a class="btn btn-primary" href="#contact" role="button">Contact Me</a>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <!--  Right and left navigation buttons-->
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+    <!--  Navigation points-->
+    <div class="dot-container">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+  </header>
+
+    <script src="script.js"></script>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-grid">
+            <div class="contact-card">
+                <i class="fa-brands fa-linkedin"></i>
+                <h3>LinkedIn</h3>
+                <p>Professional portfolio and career updates.</p>
+                <a href="https://www.linkedin.com/in/hanan-ahmed-546208272/" class="btn">Visit Profile</a>
+            </div>
+            <div class="contact-card">
+                <i class="fa-solid fa-envelope"></i>
+                <h3>Email</h3>
+                <p>Send me a message for work or collaborations.</p>
+                <a href="mailto:ithanan@gmail.com" class="btn">Send Email</a>
+            </div>
+            <div class="contact-card">
+                <i class="fa-brands fa-github"></i>
+                <h3>GitHub</h3>
+                <p>Explore my open source work and projects.</p>
+                <a href="https://github.com/ITHanan" class="btn">Visit GitHub</a>
+            </div>
+        </div>
+    </section>
+
+
+ <section id="Skills">
+   <div class="container">
+  <h2 class="main-title">Skills</h2>
+
+  <div class="main-layout">
+
+    <!-- Skills  -->
+    <div class="slider-container">
+      <div class="skills-slider">
+        <div class="skill-group">
+          <div class="skill"><p>C# ASP.NETand AI</p><div class="bar" style="width: 99%;">99%</div></div>
+          <div class="skill"><p>Database Administrator</p><div class="bar" style="width: 95%;">95%</div></div>
+          <div class="skill"><p>Clean Code</p><div class="bar" style="width: 95%;">95%</div></div>
+          <div class="skill"><p>SQL Server</p><div class="bar" style="width: 93%;">93%</div></div>
+          <div class="skill"><p>Discrete Mathematics</p><div class="bar" style="width: 90%;">92%</div></div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill"><p>API Development</p><div class="bar" style="width: 40%;">40%</div></div>
+          <div class="skill"><p>React</p><div class="bar" style="width: 40%;">40%</div></div>
+          <div class="skill"><p>HTML5</p><div class="bar" style="width: 92%;">92%</div></div>
+          <div class="skill"><p>CSS</p><div class="bar" style="width: 99%;">99%</div></div>
+          <div class="skill"><p>JavaScript</p><div class="bar" style="width: 40%;">40%</div></div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill"><p>Team Collaboration</p><div class="bar" style="width: 78%;">78%</div></div>
+          <div class="skill"><p>Java Developer</p><div class="bar" style="width: 70%;">92%</div></div>
+          <div class="skill"><p>Communication Skills</p><div class="bar" style="width: 92%;">92%</div></div>
+          <div class="skill"><p>Self-Learning</p><div class="bar" style="width: 99%;">99%</div></div>
+          <div class="skill"><p>MATLAB Programming</p><div class="bar" style="width: 80%;">80%</div></div>
+        </div>
+      </div>
+    </div>
+</section>
+   
+
+  </div>
+</div>
+
+
+
+
+<!--End Expertise & Skills -->
+
+ <section id="Project">
+
+<h2>Project</h2>
+
+<div class="card-container">
+
+
+    <div class="card">
+      <img src="./imsge/Screenshot 2025-05-11 165742.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">E-commerce Store</h5>
+        <p class="card-text">Build the structure of web pages using semantic tags.</p>
+        <a href="https://github.com/ITHanan/E-commerceStore01" class="btn">Learn More</a>
+      </div>
+    </div>
+
+    
+    <div class="card">
+      <img src="./imsge/voting Restouran Website.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">One of full-stack projects </h5>
+        <p class="card-text">Vote for your favorite Restaurant .</p>
+        <a href="https://github.com/ITHanan/E-commerceStore01" class="btn">Learn More</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="./imsge/project .png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">one of my projects Planning</h5>
+        <p class="card-text">planning projects before implementation.</p>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="./imsge/Cleane code.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Clean Architecture API
+        </h5>
+        <p class="card-text">Make your site interactive with scripting and logic.</p>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+    </div>
+
+    
+
+  </div>
+
+    <script src="script.js"></script>
+
+ </section>
+
+
+    <footer class="site-footer">
+        <div class="footer-container">
+          <div class="footer-brand">© 2025 Hanan Ahmed </div>
+      
+          <ul class="footer-links">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+      
+          <div class="footer-social">
+            <a href="mailto:ithanan@gmail.com" class="fa-solid fa-envelope"  title="E-Mail"></a>
+            <a href="https://www.linkedin.com/in/hanan-ahmed-546208272/" class="fa-brands fa-linkedin"  title="LinkedIn"></a>
+            <a href="https://github.com/ITHanan" class="fa-brands fa-github" title="GitHub"></a>
+
+                
+
+                  <!-- Back to Top Button -->
+                  <button onclick="scrollToTop()" id="backToTopBtn" title="Go to top">Top</button>
+
+                  <script src="script.js"></script>
+
+          </div>
+        </div>
+      </footer>
+      
+</body>
+</html>
