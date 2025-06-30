@@ -126,7 +126,7 @@
     
   }
   .overlay-text span {
-    color: var(--accent);
+    color: var(--accent-hover);
     text-shadow: 0 0 5px var(--accent), 0 0 10px var(--accent), 0 0 20px var(--accent);
 
   }
