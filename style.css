@@ -31,7 +31,7 @@
   
   /*  Navigation bar */
   .navbar {
-    background: var(--navbar-bg);
+    background: #292929;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -58,8 +58,8 @@
   }
   .link li a.active,
   .link li a:hover {
-    color: var(--accent);
-    border-bottom: 2px solid var(--accent);
+    color: var(--accent-hover);
+    border-bottom: 2px solid var(--accent-hover);
   }
   
   /*  Mobile menu*/
@@ -93,13 +93,25 @@
     overflow: hidden;
   }
   .mySlides {
-    display: none;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+      z-index: 0;
+      pointer-events: none;
   }
+
+.mySlides.active {
+  opacity: 1;
+  z-index: 1;
+  pointer-events: auto;
+  display: flex;
+}
+
+
   .slider-header {
     width: 100%;
     height: 100%;
@@ -127,7 +139,7 @@
   }
   .overlay-text span {
     color: var(--accent-hover);
-    text-shadow: 0 0 5px var(--accent), 0 0 10px var(--accent), 0 0 20px var(--accent);
+    text-shadow: 0 0 5px var(--accent-hover), 0 0 1px var(--accent-hover), 0 0 20px var(--accent-hover);
 
   }
   .overlay-text p {
@@ -147,23 +159,35 @@
   }
   
   /* Silde navigation buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2rem;
-    padding: 10px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 50%;
-    user-select: none;
-  }
-  .prev { left: 10px; }
-  .next { right: 10px; }
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
+ .prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.5rem;
+  padding: 10px 15px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+  z-index: 10; /* Make sure they're above the slides */
+  transition: background-color 0.3s ease;
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
   
   /*  Points  ...  */
   .dot-container {
@@ -345,7 +369,7 @@
 
   /* === Footer === */
 .site-footer {
-    background-color: #080808;
+    background-color: #292929;
     color: #d6cfcf;
     padding: 2rem 1rem;
     text-align: center;
@@ -386,7 +410,7 @@
   }
   
   .footer-social a:hover {
-    color: #6c93ff;
+    color: var(--accent-hover);
   }
   
   /* Responsive footer */
@@ -417,7 +441,7 @@
 }
 
 #backToTopBtn:hover {
-    background: linear-gradient(to right, #01c38D), #132D46;
+    background: linear-gradient(to right, #01c38D, #132D46);
 }
 
 /* content for scrolling */

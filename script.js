@@ -24,23 +24,24 @@ function currentSlide(n) {
 
 // Showing current slides and hide the rest 
 function showSlides(n) {
-  let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
 
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length) { slideIndex = 1; }
+  if (n < 1) { slideIndex = slides.length; }
 
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+  // Remove 'active' class from all slides and dots
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].classList.remove("active");
   }
 
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].classList.remove("active");
   }
 
-  slides[slideIndex - 1].style.display = "flex";  // We display current slides 
-  dots[slideIndex - 1].className += " active";
+  // Add 'active' class to current slide and dot
+  slides[slideIndex - 1].classList.add("active");
+  dots[slideIndex - 1].classList.add("active");
 }
 
 
