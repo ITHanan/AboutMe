@@ -4,7 +4,7 @@
     --navbar-bg: #080808;
     --link-color: #d6cfcf;
     --accent: #6c93ff;
-    --accent-hover: #81c784;
+    --accent-hover: #01c38D;
     --overlay-bg: rgba(0, 0, 0, 0.6);
   }
   
@@ -405,7 +405,7 @@
   right: 30px;
   z-index: 1000;
   font-size: 1.5rem;
-    background: linear-gradient(to right, #6c93ff, #81c784);
+    background: linear-gradient(to right, #132D46, #01c38D);
   color: white;
   border: none;
   padding: 10px 15px;
@@ -417,7 +417,7 @@
 }
 
 #backToTopBtn:hover {
-    background: linear-gradient(to right, #81c784), #6c93ff;
+    background: linear-gradient(to right, #132D46), #6c93ff;
 }
 
 /* content for scrolling */
