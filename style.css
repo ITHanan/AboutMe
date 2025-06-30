@@ -17,7 +17,7 @@
     transition: background 0.3s, color 0.3s;
   }
   
-  /* ✅ Menu button for small csreen */
+  /*  Menu button for small csreen */
   .menu-toggle {
     display: none;
     font-size: 24px;
@@ -29,7 +29,7 @@
     z-index: 1001;
   }
   
-  /* ✅ Navigation bar */
+  /*  Navigation bar */
   .navbar {
     background: var(--navbar-bg);
     width: 100%;
@@ -62,7 +62,7 @@
     border-bottom: 2px solid var(--accent);
   }
   
-  /* ✅ Mobile menu*/
+  /*  Mobile menu*/
   @media (max-width: 768px) {
     .menu-toggle {
       display: block;
@@ -85,7 +85,7 @@
     }
   }
   
-  /* ✅ Slides */
+  /*  Slides */
   .slider-container01 {
     width: 100%;
     height: 830px;
@@ -146,7 +146,7 @@
     background: linear-gradient(to right, var(--accent-hover), var(--accent));
   }
   
-  /* ✅Silde navigation buttons */
+  /* Silde navigation buttons */
   .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -165,7 +165,7 @@
     background-color: rgba(0,0,0,0.8);
   }
   
-  /* ✅ Points  ...  */
+  /*  Points  ...  */
   .dot-container {
     text-align: center;
     position: absolute;
@@ -185,7 +185,7 @@
     background-color: #717171;
   }
   
-  /* ✅ skills*/
+  /*  skills*/
   .slider-container {
     flex: 2;
     overflow-x: auto;
@@ -229,7 +229,7 @@
     padding-right: 5px;
   }
   
-  /* ✅Communication part*/
+  /* Communication part*/
   .contact-grid,
   .project-grid {
     display: grid;
@@ -304,7 +304,7 @@
   .btn {
     display: inline-block;
     padding: 8px 16px;
-    background: linear-gradient(to right, #6c93ff, #81c784);
+    background: linear-gradient(to right, #132D46, #01c38D);
     color: white;
     text-decoration: none;
     border-radius: 4px;
@@ -317,7 +317,7 @@
 
   }
   
-  /* ✅ Change style button */
+  /* Change style button */
   .theme-toggle {
     background: none;
     border: none;
@@ -326,7 +326,7 @@
     color: white;
   }
   
-  /* ✅ Night mode*/
+  /*  Night mode*/
   .dark-mode {
     background-color: #121212;
     color: #e0e0e0;
@@ -375,7 +375,7 @@
   }
   
   .footer-links li a:hover {
-    color: #6c93ff;
+    color: #01c38D;
   }
   
   .footer-social a {
@@ -417,7 +417,7 @@
 }
 
 #backToTopBtn:hover {
-    background: linear-gradient(to right, #132D46), #6c93ff;
+    background: linear-gradient(to right, #01c38D), #132D46;
 }
 
 /* content for scrolling */
